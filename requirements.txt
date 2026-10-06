@@ -1,0 +1,25 @@
+# Procesamiento y análisis de datos
+numpy
+pandas
+openpyxl
+
+# Visualización
+matplotlib
+seaborn
+
+# Machine learning y redes neuronales
+scikit-learn
+tensorflow>=2.16
+joblib
+
+# API REST
+fastapi
+uvicorn[standard]
+pydantic>=2
+
+# Frontend
+streamlit
+requests
+
+# Notebooks
+jupyter
