@@ -1,3 +1,5 @@
+# ESTADO_ARCHIVO: EN_MODIFICACION
+
 # Procesamiento y análisis de datos
 numpy
 pandas

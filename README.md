@@ -52,10 +52,17 @@ Proyecto_B_Abandono_Clientes/
 ├── README.md                      ← Guía completa de instalación y uso del proyecto
 ├── requirements.txt               ← Dependencias Python
 ├── .gitignore                     ← Archivos excluidos del control de versiones
+├── .vscode                        ← Para archivo de configuracion de VSCode
+├── USO_DE_IA.md                   ← Para documentar el uso de herramientas de AI generativa en el proyecto
 │
 ├── data/
 │   ├── raw/                       ← Datos originales sin procesar
-│   └── processed/                 ← Datos limpios y preprocesados
+|   | └── docs/                    ← Carpeta para albergar documentacion sobre los datos originales
+|   |
+│   ├── processed/                 ← Datos originales sin procesar
+|   | └── Proyecto_B_Clientes_Limpio.parquet     ← Datos limpios y preprocesados para EDA
+|   |
+│   └── partitions/                 ← Datos limpios, preprocesados y particionados
 │       ├── train.csv              ← Conjunto de entrenamiento
 │       └── test.csv               ← Conjunto de prueba
 │
@@ -75,6 +82,11 @@ Proyecto_B_Abandono_Clientes/
 │       ├── model1.py              ← Entrenamiento del Modelo 1
 │       ├── model2.py              ← Entrenamiento del Modelo 2
 │       └── utils.py               ← Utilidades compartidas (métricas, gráficas)
+│
+├── Proyect_Context/
+│   ├── About_Folder.md            ← Indicaciones de la carpeta para Agentes  
+│   └── General_Context_File.md    ← Historial compartido sobre la evolucion del proyecto
+│
 │
 ├── models/
 │   ├── model1.keras               ← Modelo 1 guardado (formato Keras)

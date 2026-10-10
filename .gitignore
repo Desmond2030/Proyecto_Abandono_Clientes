@@ -2,6 +2,7 @@
 venv/
 .venv/
 env/
+.IA_Abonado/
 
 # Python
 __pycache__/
@@ -32,3 +33,7 @@ desktop.ini
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Data
+/data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv
+/data/processed/Proyecto_B_Clientes_Limpio.parquet
