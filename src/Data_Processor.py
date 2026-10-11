@@ -5,6 +5,7 @@ sys.path.append(os.path.abspath(os.path.join('..')))
 
 import pandas as pd
 import numpy as np
+from sklearn.preprocessing import MinMaxScaler
 
 
 from src.Data_Loader import DataLoader
@@ -15,7 +16,8 @@ class DataProcessor(DataLoader):
     def __init__(self):
         super().__init__()
         self.graficos = Graficos()
-        
+   
+    
     
     def set_types(self, tipos:dict ) -> 'DataProcessor':
         self._data = self._data.astype(tipos)
@@ -103,3 +105,17 @@ class DataProcessor(DataLoader):
 
 
 
+    def verif(self, DF) -> dict:
+        d = {}
+        f, c = DF.shape
+        for i in range(c):
+            col = list(DF.iloc[:, i])
+            for e in range(len(col)):
+                tipo = type(col[e])
+                t = type(col[e -1])
+                if t == tipo:
+                    d.update({DF.columns.values[i] : tipo}) 
+                else:
+                    d.update({DF.columns.values[i] : "datos incosistentes"}) 
+                    break
+        return d, f, c
