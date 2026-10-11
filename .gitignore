@@ -35,5 +35,10 @@ desktop.ini
 .streamlit/secrets.toml
 
 # Data
-/data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv
 /data/processed/Proyecto_B_Clientes_Limpio.parquet
+/data/partitions/X_test_scaled.npy
+/data/partitions/X_train_scaled.npy
+/data/partitions/y_test.csv
+/data/partitions/y_train.csv
+/data/partitions/validation_set.parquet
+/data/raw/archive/

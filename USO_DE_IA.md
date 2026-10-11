@@ -35,3 +35,20 @@
 
 **Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_
 
+## Intervención 3 — Mensaje de commit para particiones y escalado
+
+**Fecha:** 2026-10-10.
+
+**Herramienta:** ChatGPT (Codex).
+
+**Tareas:**
+- Revisión del estado de Git y de las diferencias respecto al commit bfb8d28, incluidos archivos nuevos y comparación de las celdas de los notebooks renombrados.
+- Redacción del mensaje con la convención existente `features/Título: descripción`, centrado en numeración de notebooks, particiones estratificadas, escalado, persistencia y exclusiones de Git.
+- Identificación mediante lectura del código de un problema pendiente en la exportación `.npy`: `save_data` usa `self.array`, mientras el notebook asigna los subconjuntos a `data`; además, el setter de `array` se llama a sí mismo.
+- Sin cambios al código o a los notebooks, sin ejecutarlos y sin crear el commit.
+
+**Prompt utilizado:** «Genera un mensaje tipo commit que contenga todos los cambios realizados en el proyecto, yo realizare el commit pero tu indicaras los cambios mediante el mensaje, mantén una convención con los otros proyectos».
+
+**Reflexión sobre cómo la IA ayudó en el aprendizaje:** _(pendiente, la completa el desarrollador)_
+
+**Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_

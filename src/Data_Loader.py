@@ -11,6 +11,7 @@ import openpyxl
 class DataLoader:
     def __init__(self):
         self._data = None
+        self._array = None
     
     @property
     def data(self):
@@ -19,6 +20,16 @@ class DataLoader:
     @data.setter
     def data(self, data):
         self._data = data
+        
+        
+        
+    @property
+    def array(self):
+        return self._array
+    
+    @array.setter
+    def array(self, array):
+        self._array = self._array
         
     
     
@@ -33,9 +44,8 @@ class DataLoader:
             raise ValueError("Usar extencion .csv, .xlsx, o .parquet")
         
         return self
-
-        
-        
+    
+    
         
     def save_data(self, file_path, *args, **kargs):
         if file_path.endswith('.csv'):
@@ -44,7 +54,8 @@ class DataLoader:
             self._data.to_excel(file_path, *args, **kargs)
         elif file_path.endswith('.parquet'):
             self._data.to_parquet(file_path, *args, **kargs)
+        elif file_path.endswith('.npy'):
+            np.save(file_path, self.array)
         else:
-            raise ValueError("Usar extencion .csv, .xlsx, o .parquet")
-    
+            raise ValueError("Usar extencion .npy, .csv, .xlsx o .parquet")
     
