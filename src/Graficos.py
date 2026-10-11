@@ -33,6 +33,8 @@ class Graficos:
         plt.show()
         
         
+        return self
+        
         
         
         
@@ -50,3 +52,5 @@ class Graficos:
         plt.ylabel("Frecuencia")
         plt.ylim(0, max(alto) * 1.1) # Para aumentar el limite superior del eje y y que no se corte la barra más alta
         plt.show()
+        
+        return self

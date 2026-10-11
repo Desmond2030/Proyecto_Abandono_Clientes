@@ -100,7 +100,7 @@ Proyecto_B_Abandono_Clientes/
 │   └── predict.py                 ← Lógica de predicción e inferencia
 │
 └── app/
-    ├── Home.py                    ← Página principal del dashboard
+    ├── Home.py                    ← Página principal del dashboard con streamlit
     └── pages/
         ├── 1_Prediccion.py        ← Predicciones individuales
         ├── 2_Analisis.py          ← Análisis de lotes
