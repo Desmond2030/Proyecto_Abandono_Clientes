@@ -133,3 +133,24 @@
 **Reflexión sobre cómo la IA ayudó en el aprendizaje:** _(pendiente, la completa el desarrollador)_
 
 **Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_
+
+## Intervención — Copia de los modelos de referencia a WSL
+
+**Fecha:** 2026-10-12.
+**Herramienta:** ChatGPT (Codex) y PowerShell.
+**Prompt utilizado:** «Copia esos modelos».
+
+**Tareas realizadas:** Copia desde models/ de la carpeta secundaria de Windows a models/ del proyecto principal WSL de modelo_74_accur.keras y regression_model.keras. Ambos destinos estaban ausentes; se verificó la igualdad SHA-256 de cada copia con su origen. Se comprobó además que scaler.pkl ya era idéntico en ambos proyectos, por lo que no se reemplazó. Los modelos de referencia ya están disponibles en WSL, actualizando la limitación registrada al integrar app/ y api/. No se entrenaron ni alteraron redes, no se cambió la configuración de inferencia y no se realizó commit ni push en esta intervención.
+
+**Reflexión sobre cómo la IA ayudó en el aprendizaje:** _(pendiente, la completa el desarrollador)_
+
+**Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_
+
+## Intervención — Commit de modelos de referencia
+
+**Fecha:** 2026-10-12.
+**Herramienta:** ChatGPT (Codex), Git y PowerShell.
+**Prompt utilizado:** «realiza el commit siguiendo la convencion».
+**Tareas realizadas:** Revisión de los cambios pendientes en feature/pagina y de los mensajes recientes. Preparación del commit con el formato observado features/Área: Se describe el cambio, incluyendo únicamente los dos modelos de referencia copiados y su registro en USO_DE_IA.md. Se normalizan a LF los finales de línea del registro pendiente agregado por el agente. No se modifican redes ni configuración y no se realiza push.
+**Reflexión sobre cómo la IA ayudó en el aprendizaje:** _(pendiente, la completa el desarrollador)_
+**Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_
