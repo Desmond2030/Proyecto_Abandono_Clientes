@@ -111,3 +111,25 @@
 **Reflexión sobre cómo la IA ayudó en el aprendizaje:** _(pendiente, la completa el desarrollador)_
 
 **Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_
+
+
+## Intervención 7 — Resolución del merge en WSL
+
+**Fecha:** 2026-10-12.
+
+**Herramienta:** ChatGPT (Codex).
+
+**Prompt utilizado:** «Revisa los conflictos en la carpeta de WSL, arregla los merge para yo despues realizar el pull». Continuación: «sigue con lo que estabas».
+
+**Tareas:**
+- Comparación de la base común, la versión local y la remota del merge pendiente en Feature/Modelos; identificación de cuatro archivos en conflicto.
+- Conservación de la versión local de src/Modelo_ANN.py, compatible con los dos notebooks ANN actuales: preparación de experimentos, callbacks, batch_size, activaciones, reducción de neuronas y Regression_Model.
+- Conservación del notebook de particiones local con test_size=0.20 y sus salidas asociadas; la única diferencia de código frente al remoto era test_size=0.15.
+- Conservación de tensorflow[and-cuda]>=2.16 sin comillas y de la selección local de dependencias para notebooks (ipykernel y nbformat).
+- Conservación íntegra de las seis intervenciones anteriores, incluida la intervención 6 que no estaba en la versión remota, y adición de este registro.
+- Respaldo temporal de los cuatro archivos antes de resolver; validación estructural de notebooks, sintaxis de Python y requisitos, compatibilidad de los argumentos usados por los notebooks y ausencia de marcadores de conflicto.
+- Preparación del commit local de merge para desbloquear el siguiente pull. Sin ejecutar notebooks ni entrenamientos, instalar dependencias, modificar datos/modelos o trabajar sobre la copia de Windows; sin pull ni push.
+
+**Reflexión sobre cómo la IA ayudó en el aprendizaje:** _(pendiente, la completa el desarrollador)_
+
+**Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_
