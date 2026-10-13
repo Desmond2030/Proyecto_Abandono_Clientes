@@ -150,8 +150,8 @@ pip install -r requirements.txt
 
 | Modelo | Accuracy | Precision | Recall | F1 |
 |---|---|---|---|---|
-| Modelo 1 | | | | |
-| Modelo 2 | | | | |
+| Modelo 1 | 0.74 | | | |
+| Modelo 2 | 0.61 | | | |
 
 **Modelo seleccionado y justificación:**
 
