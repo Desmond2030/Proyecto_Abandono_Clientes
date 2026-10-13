@@ -2,6 +2,8 @@
 venv/
 .venv/
 env/
+.IA_Abonado/
+.IA_Abandono_wsl/
 
 # Python
 __pycache__/
@@ -32,3 +34,12 @@ desktop.ini
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Data
+/data/processed/Proyecto_B_Clientes_Limpio.parquet
+/data/partitions/X_test_scaled.csv
+/data/partitions/X_train_scaled.csv
+/data/partitions/y_test.csv
+/data/partitions/y_train.csv
+/data/partitions/validation_set.parquet
+/data/raw/archive/

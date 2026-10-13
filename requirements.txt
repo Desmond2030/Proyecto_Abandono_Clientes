@@ -1,25 +1,34 @@
+# ESTADO_ARCHIVO: EN_MODIFICACION
+
+# Proyecto para Python 3.11. Dependencias directas; no es un bloqueo de versiones.
+
 # Procesamiento y análisis de datos
 numpy
 pandas
 openpyxl
+pyarrow  # Motor para leer y guardar los archivos Parquet del proyecto
+scipy
 
 # Visualización
-matplotlib
+matplotlib>=3.10  # Requerido por boxplot(orientation=...) en src/Graficos.py
 seaborn
+dython  # Asociaciones entre variables en el EDA
 
 # Machine learning y redes neuronales
 scikit-learn
-tensorflow>=2.16
+tensorflow[and-cuda]>=2.16
+keras>=3  # Importado directamente, además de tensorflow.keras
 joblib
 
-# API REST
+# API REST (prevista en el README)
 fastapi
 uvicorn[standard]
 pydantic>=2
 
-# Frontend
+# Frontend (previsto en el README)
 streamlit
 requests
 
 # Notebooks
-jupyter
+ipykernel
+nbformat
