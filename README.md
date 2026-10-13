@@ -155,8 +155,8 @@ pip install -r requirements.txt
 
 **Modelo seleccionado y justificación:**
 
-_Completar._
+Modelo 1 de clasificacion tiene el mejor ratio de acierto
 
 ## Conclusiones y recomendaciones
 
-_Completar._
+Las metricas de ambos modelos no supera el umbral del 80%, el desbalanceo de cargas es un factor bastante compejo de entrenar incliso al implementar class_weight, aplicar dropouts no siempre mejoro el modelo y el planeamiento de la arquitectura el bastante capricoso ya que con cambios minimos el accurracy bajaba bastane, por lo que considero que sobre una buena planificacion de la arquitectura de la red neuronal, la iteracion sobre distintos los distintos hiperparametros puede marcar los cambios fundamentales en la precicion.
