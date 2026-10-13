@@ -235,3 +235,18 @@ No se sustituyeron por otros de forma automática. En WSL se deben disponer
 esos artefactos y configurar explícitamente la app para reproducir esa selección.
 Los apartados de traslado anteriores describen la preparación de la copia Windows;
 esta sección registra la integración efectuada, sin publicar la rama al remoto.
+
+## Recarga automática durante desarrollo
+
+El lanzador `python app/run.py` activa `--server.runOnSave true` y
+`--server.fileWatcherType poll`: Streamlit vuelve a ejecutar la página al guardar
+cambios en sus archivos observados, sin pulsar Rerun. El sondeo permite detectar
+cambios hechos desde Windows sobre los archivos de WSL.
+
+Para ejecutar solo la interfaz desde la raíz de WSL:
+
+```bash
+.IA_Abandono_wsl/bin/python -m streamlit run app/Home.py --server.runOnSave true --server.fileWatcherType poll
+```
+
+La API conserva su proceso independiente; esta opción recarga Streamlit.

@@ -42,6 +42,7 @@ def main():
         env = {**os.environ, "TELCO_API_URL": api.url}
         children.append(subprocess.Popen([sys.executable, "-m", "streamlit", "run", "app/Home.py",
             "--server.address", "127.0.0.1", "--server.port", "8501", "--server.headless", "true",
+            "--server.runOnSave", "true", "--server.fileWatcherType", "poll",
             "--browser.gatherUsageStats", "false"], cwd=ROOT, env=env))
         print("App: http://127.0.0.1:8501 · API: http://127.0.0.1:8000/docs", flush=True)
         while all(child.poll() is None for child in children):

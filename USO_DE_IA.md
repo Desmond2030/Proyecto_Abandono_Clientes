@@ -12,9 +12,11 @@
 
 **Prompt utilizado (resumen):** Generar en `data/raw/docs` el documento `Telco_Data_Context.md` con el máximo contenido verídico y respaldado por fuentes confiables sobre el dataset de Kaggle `blastchar/telco-customer-churn`; incluir tablas con el nombre de la variable, su significado y su renombrado al español (captura de las columnas renombradas); ser conciso sin recortar contenido importante; no crear otras carpetas ni archivos.
 
-**Reflexión sobre cómo la IA ayudó en el aprendizaje:** _(pendiente, la completa el desarrollador)_
+**Reflexión sobre cómo la IA ayudó en el aprendizaje:** 
+Ayudo a comprender la data sin tener que filtar los sitos a mano de antemano
 
-**Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_
+**Modificaciones realizadas por el desarrollador al código/análisis generado:** 
+Ninguna
 
 ## Intervención 2 — Revisión de cambios y redacción del mensaje de commit
 
@@ -31,9 +33,11 @@
 
 **Prompt utilizado:** «Genera un mensaje tipo commit que contenga todos los cambios realizados en el proyecto, yo realizare el commit pero tu indicaras los cambios mediante el mensaje, mantén una convención con los otros proyectos».
 
-**Reflexión sobre cómo la IA ayudó en el aprendizaje:** _(pendiente, la completa el desarrollador)_
+**Reflexión sobre cómo la IA ayudó en el aprendizaje:** 
+Mantener estructura en la convencion de commits del proyecto
 
-**Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_
+**Modificaciones realizadas por el desarrollador al código/análisis generado:** 
+Ninguno
 
 ## Intervención 3 — Mensaje de commit para particiones y escalado
 
@@ -49,10 +53,11 @@
 
 **Prompt utilizado:** «Genera un mensaje tipo commit que contenga todos los cambios realizados en el proyecto, yo realizare el commit pero tu indicaras los cambios mediante el mensaje, mantén una convención con los otros proyectos».
 
-**Reflexión sobre cómo la IA ayudó en el aprendizaje:** _(pendiente, la completa el desarrollador)_
+**Reflexión sobre cómo la IA ayudó en el aprendizaje:** 
+Mantener estructura en la convencion de commits del proyecto
 
-**Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_
-
+**Modificaciones realizadas por el desarrollador al código/análisis generado:** 
+Ninguno
 
 ## Intervención 4 — Ajuste de dependencias del proyecto
 
@@ -72,9 +77,10 @@
 - Jupyter y Notebook no están instalados en el entorno local; jupyter se conserva en requirements.txt. No se instalaron paquetes ni se validó una instalación desde cero. El archivo declara dependencias directas y no bloquea todas sus versiones.
 - El notebook nuevo del modelo ANN está vacío; se revisaron los otros tres notebooks y los módulos de src. AGENTS.md conserva una descripción anterior del proyecto. No se modificaron código, notebooks, datos ni cambios previos del usuario, ni se ejecutó entrenamiento.
 
-**Reflexión sobre cómo la IA ayudó en el aprendizaje:** _(pendiente, la completa el desarrollador)_
+**Reflexión sobre cómo la IA ayudó en el aprendizaje:** Ayudo a mantener una mejor reproductivilidad del proyecto de forma ordenada sin escribir tanto 
 
-**Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_
+**Modificaciones realizadas por el desarrollador al código/análisis generado:** 
+Ninguno
 
 ## Intervención 5 — Mensaje de commit para la base ANN y persistencia de datos
 
@@ -90,9 +96,11 @@
 
 **Prompt utilizado:** «Genera un mensaje tipo commit que contenga todos los cambios realizados en el proyecto, yo realizare el commit pero tu indicaras los cambios mediante el mensaje, mantén una convención con los otros proyectos».
 
-**Reflexión sobre cómo la IA ayudó en el aprendizaje:** _(pendiente, la completa el desarrollador)_
+**Reflexión sobre cómo la IA ayudó en el aprendizaje:** 
+Mantener estructura en la convencion de commits del proyecto
 
-**Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_
+**Modificaciones realizadas por el desarrollador al código/análisis generado:** 
+Ninguno
 
 ## Intervención 6 — Mensaje de commit del proyecto principal en WSL
 
@@ -108,9 +116,11 @@
 
 **Prompt utilizado:** «Genera un mensaje tipo commit que contenga todos los cambios realizados solo en el proyecto principal de WSL, yo realizare el commit pero tu indicaras los cambios mediante el mensaje, mantén una convención con los otros proyectos».
 
-**Reflexión sobre cómo la IA ayudó en el aprendizaje:** _(pendiente, la completa el desarrollador)_
+**Reflexión sobre cómo la IA ayudó en el aprendizaje:** 
+Mantener estructura en la convencion de commits del proyecto
 
-**Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_
+**Modificaciones realizadas por el desarrollador al código/análisis generado:** 
+Ninguno
 
 
 ## Intervención 7 — Resolución del merge en WSL
@@ -130,9 +140,11 @@
 - Respaldo temporal de los cuatro archivos antes de resolver; validación estructural de notebooks, sintaxis de Python y requisitos, compatibilidad de los argumentos usados por los notebooks y ausencia de marcadores de conflicto.
 - Preparación del commit local de merge para desbloquear el siguiente pull. Sin ejecutar notebooks ni entrenamientos, instalar dependencias, modificar datos/modelos o trabajar sobre la copia de Windows; sin pull ni push.
 
-**Reflexión sobre cómo la IA ayudó en el aprendizaje:** _(pendiente, la completa el desarrollador)_
+**Reflexión sobre cómo la IA ayudó en el aprendizaje:** 
+facilita la resolucion de conflicto para no tener que corregir a mano
 
-**Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_
+**Modificaciones realizadas por el desarrollador al código/análisis generado:** 
+Ninguno
 
 ## Intervención — Copia de los modelos de referencia a WSL
 
@@ -142,9 +154,11 @@
 
 **Tareas realizadas:** Copia desde models/ de la carpeta secundaria de Windows a models/ del proyecto principal WSL de modelo_74_accur.keras y regression_model.keras. Ambos destinos estaban ausentes; se verificó la igualdad SHA-256 de cada copia con su origen. Se comprobó además que scaler.pkl ya era idéntico en ambos proyectos, por lo que no se reemplazó. Los modelos de referencia ya están disponibles en WSL, actualizando la limitación registrada al integrar app/ y api/. No se entrenaron ni alteraron redes, no se cambió la configuración de inferencia y no se realizó commit ni push en esta intervención.
 
-**Reflexión sobre cómo la IA ayudó en el aprendizaje:** _(pendiente, la completa el desarrollador)_
+**Reflexión sobre cómo la IA ayudó en el aprendizaje:** 
+Mantener estructura limpia del proyecto con nuevas adiciones y verificacion de que son las mismas
 
-**Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_
+**Modificaciones realizadas por el desarrollador al código/análisis generado:** 
+Ninguno
 
 ## Intervención — Commit de modelos de referencia
 
@@ -152,5 +166,31 @@
 **Herramienta:** ChatGPT (Codex), Git y PowerShell.
 **Prompt utilizado:** «realiza el commit siguiendo la convencion».
 **Tareas realizadas:** Revisión de los cambios pendientes en feature/pagina y de los mensajes recientes. Preparación del commit con el formato observado features/Área: Se describe el cambio, incluyendo únicamente los dos modelos de referencia copiados y su registro en USO_DE_IA.md. Se normalizan a LF los finales de línea del registro pendiente agregado por el agente. No se modifican redes ni configuración y no se realiza push.
-**Reflexión sobre cómo la IA ayudó en el aprendizaje:** _(pendiente, la completa el desarrollador)_
-**Modificaciones realizadas por el desarrollador al código/análisis generado:** _(pendiente, las completa el desarrollador)_
+**Reflexión sobre cómo la IA ayudó en el aprendizaje:** 
+Mantener estructura en la convencion de commits del proyecto
+
+**Modificaciones realizadas por el desarrollador al código/análisis generado:** 
+Ninguno
+
+## Intervención — Comparación del avance entre WSL y Windows
+
+**Fecha:** 2026-10-12.
+**Herramienta:** ChatGPT (Codex), Git y PowerShell.
+**Prompt utilizado:** «cual es el proyecto mas avanzado».
+**Tareas realizadas:** Comparación del estado de Git, archivos de código, notebooks, API, dashboard y hashes de modelos de ambas copias. WSL, en feature/pagina y commit 8f88b85, reúne el segundo notebook ANN, la clase Regression_Model, la API y la página integradas y los modelos de referencia. La API coincide con Windows al normalizar finales de línea; los modelos compartidos y el escalador son idénticos. Windows conserva cambios sin commit y una configuración local de inferencia que no existe en WSL. La conclusión se refiere al avance e integración de los archivos; no se ejecutaron aplicaciones, pruebas ni entrenamientos. Solo se añadió este registro en WSL, sin commit.
+**Reflexión sobre cómo la IA ayudó en el aprendizaje:** 
+Mantener estructura entre la zona del desarrollador y el agente para tratar dos lineas de desarrollo, la agentica y la manual
+**Modificaciones realizadas por el desarrollador al código/análisis generado:** 
+Ninguno solo revicion
+
+## Intervención — Recarga automática de Streamlit
+
+**Fecha:** 2026-10-12.
+**Herramienta:** ChatGPT (Codex), PowerShell y Python del entorno WSL existente.
+**Prompt utilizado:** «hot reload streamlit».
+**Tareas realizadas:** Activación de --server.runOnSave true y --server.fileWatcherType poll en app/run.py. Actualización de app/Specs.md con el comando equivalente para iniciar solo Streamlit. Se verificó la instancia existente mediante PID, directorio y argumentos; se reinició únicamente Streamlit con las opciones activas. Comprobación HTTP /_stcore/health satisfactoria y confirmación de ambos argumentos en el proceso nuevo. Sin cambios a API, artefactos o configuración de modelos. No se realizó commit ni push.
+**Reflexión sobre cómo la IA ayudó en el aprendizaje:** 
+Ayuda en la busqueda rapida de comandos
+
+**Modificaciones realizadas por el desarrollador al código/análisis generado:** 
+Solo consulta
